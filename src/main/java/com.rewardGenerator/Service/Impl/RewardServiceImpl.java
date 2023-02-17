@@ -63,4 +63,9 @@ public class RewardServiceImpl implements RewardService {
         int totalRewards = rewardsByMonth.values().stream().mapToInt(Integer::intValue).sum();
         return new Reward(rewardsByMonth, totalRewards);
     }
+
+    @Override
+    public List<Transaction> getAllTransactions() {
+        return transactionRepository.findAll();
+    }
 }
