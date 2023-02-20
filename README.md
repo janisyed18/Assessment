@@ -14,10 +14,10 @@ The application will start up on port 8181 by default. You can access the API do
 
 bash
 
-Copy code
 
+```api
 http://localhost:8181
-
+```
 Usage
 
 Create a Customer
